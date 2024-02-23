@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDataContext>(
     options => options.UseInMemoryDatabase("DataDB")
-);
+);      
 
 builder.Services.AddDbContext<AppSecurityContext>(
     options => options.UseInMemoryDatabase("SecurityDB")
